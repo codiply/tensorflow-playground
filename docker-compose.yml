@@ -1,0 +1,10 @@
+version: '2'
+services:
+  tensorflow:
+    build: .
+    environment:
+     - PASSWORD=password
+    ports:
+     - "8888:8888"
+    volumes:
+     - ./notebooks/:/notebooks/
