@@ -8,3 +8,9 @@ services:
      - "8888:8888"
     volumes:
      - ./notebooks/:/notebooks/
+  tensorboard:
+    build: ./docker/tensorboard/
+    ports:
+     - "6006:6006"
+    volumes:
+     - ./notebooks/logs/:/tensorflow-logs/
