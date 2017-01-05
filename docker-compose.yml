@@ -1,7 +1,7 @@
 version: '2'
 services:
   tensorflow:
-    build: .
+    build: ./docker/tensorflow/
     environment:
      - PASSWORD=password
     ports:
